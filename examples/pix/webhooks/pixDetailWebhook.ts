@@ -5,9 +5,9 @@ let params = {
 	chave: 'SUACHAVEPIX',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.pixDetailWebhook(params)
+apiEfi.pixDetailWebhook(params)
 	.then((resposta) => {
 		console.log(resposta)
 	})

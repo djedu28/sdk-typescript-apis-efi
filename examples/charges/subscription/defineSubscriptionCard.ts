@@ -19,7 +19,7 @@ let body = {
 			},
 			customer: {
 				name: 'Gorbadoc Oldbuck',
-				email: 'oldbuck@efipay.com.br',
+				email: 'oldbuck@apiEfi.com.br',
 				cpf: '94271564656',
 				birth: '1977-01-15',
 				phone_number: '5144916523',
@@ -28,10 +28,10 @@ let body = {
 	},
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método defineSubscriptionPayMethod indica os campos que devem ser enviados e que serão retornados
-efipay.defineSubscriptionPayMethod(params, body)
+apiEfi.defineSubscriptionPayMethod(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

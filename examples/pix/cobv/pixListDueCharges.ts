@@ -6,13 +6,13 @@ let params = {
 	fim: '2023-11-30T20:10:00Z',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixListDueCharges indica os campos que devem ser enviados e que serão retornados
-efipay.pixListDueCharges(params)
+apiEfi.pixListDueCharges(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
-	}) 
+	})
 	.catch((error) => {
 		console.log(error)
 	})

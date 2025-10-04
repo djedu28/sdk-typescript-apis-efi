@@ -13,7 +13,7 @@ let body = {
 	valor: {
 		original: '123.45',
 	},
-	chave: 'SUACHAVEPIX', // Informe sua chave Pix cadastrada na efipay.	
+	chave: 'SUACHAVEPIX', // Informe sua chave Pix cadastrada na apiEfi.
 	infoAdicionais: [
 		{
 			nome: 'Pagamento em',
@@ -30,10 +30,10 @@ let params = {
 	txid: 'dt9BHlyzrb5jrFNAdfEDVpHgiOmDbVqVxd', // Informe o TxId da cobrança
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixUpdateCharge indica os campos que devem ser enviados e que serão retornados
-efipay.pixUpdateCharge(params, body)
+apiEfi.pixUpdateCharge(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

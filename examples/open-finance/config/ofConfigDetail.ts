@@ -1,9 +1,9 @@
 import EfiPay from 'sdk-typescript-apis-efi';
 import options from '../../credentials';
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.ofConfigDetail()
+apiEfi.ofConfigDetail()
 	.then((resposta) => {
 		console.log(resposta)
 	})

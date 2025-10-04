@@ -6,9 +6,9 @@ let params = {
 	id: '607dc88bb83bf',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.pixDetailDevolution(params)
+apiEfi.pixDetailDevolution(params)
 	.then((resposta) => {
 		console.log(resposta)
 	})

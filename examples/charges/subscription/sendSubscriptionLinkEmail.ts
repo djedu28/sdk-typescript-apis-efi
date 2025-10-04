@@ -6,13 +6,13 @@ let params = {
 }
 
 let body = {
-	email: 'oldbuck@efipay.com.br',
+	email: 'oldbuck@apiEfi.com.br',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método sendSubscriptionLinkEmail indica os campos que devem ser enviados e que serão retornados
-efipay.sendSubscriptionLinkEmail(params, body)
+apiEfi.sendSubscriptionLinkEmail(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

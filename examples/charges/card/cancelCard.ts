@@ -5,10 +5,10 @@ let params = {
 	id: 0,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-// O método cancelCharge indica os campos que devem ser enviados e que serão retornados	
-efipay.cancelCharge(params)
+// O método cancelCharge indica os campos que devem ser enviados e que serão retornados
+apiEfi.cancelCharge(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

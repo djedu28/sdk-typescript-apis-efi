@@ -5,9 +5,9 @@ let params = {
 	id: 1,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.detailReport(params)
+apiEfi.detailReport(params)
 	.then((resposta) => {
 		console.log(resposta)
 	})

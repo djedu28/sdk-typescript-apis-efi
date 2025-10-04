@@ -6,9 +6,9 @@ let params = {
 	fim: '2022-11-30T20:10:00Z',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.pixReceivedList(params)
+apiEfi.pixReceivedList(params)
 	.then((resposta) => {
 		console.log(resposta)
 	})

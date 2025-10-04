@@ -9,10 +9,10 @@ let body = {
     valor: 1000,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-// O método refundCard indica os campos que devem ser enviados e que serão retornados	
-efipay.refundCard(params, body)
+// O método refundCard indica os campos que devem ser enviados e que serão retornados
+apiEfi.refundCard(params, body)
     .then((resposta) => {
         console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
     })

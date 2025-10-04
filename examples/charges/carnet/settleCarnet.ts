@@ -5,10 +5,10 @@ let params = {
 	id: 26812,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-// O método settleCarnet indica os campos que devem ser enviados e que serão retornados	
-efipay.settleCarnet(params)
+// O método settleCarnet indica os campos que devem ser enviados e que serão retornados
+apiEfi.settleCarnet(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

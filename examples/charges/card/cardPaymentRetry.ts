@@ -29,10 +29,10 @@ let body = {
     }
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-// O método cardPaymentRetry indica os campos que devem ser enviados e que serão retornados	
-efipay.cardPaymentRetry(params, body)
+// O método cardPaymentRetry indica os campos que devem ser enviados e que serão retornados
+apiEfi.cardPaymentRetry(params, body)
     .then((resposta) => {
         console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
     })

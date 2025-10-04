@@ -1,7 +1,7 @@
 import EfiPay from 'sdk-typescript-apis-efi';
 import options from '../../credentials';
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 let params = {
 	codBarras: '',
@@ -14,7 +14,7 @@ let body = {
 }
 
 // O método payRequestBarCode indica os campos que devem ser enviados e que serão retornados
-efipay.payRequestBarCode(params, body)
+apiEfi.payRequestBarCode(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

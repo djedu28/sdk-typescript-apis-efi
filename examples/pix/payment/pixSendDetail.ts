@@ -5,10 +5,10 @@ let params = {
 	e2eid: '',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixSendDetail indica os campos que devem ser enviados e que serão retornados
-efipay.pixSendDetail(params)
+apiEfi.pixSendDetail(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

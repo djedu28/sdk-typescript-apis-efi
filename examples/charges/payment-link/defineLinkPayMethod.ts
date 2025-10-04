@@ -14,10 +14,10 @@ let body = {
 	payment_method: 'all',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método defineLinkPayMethod indica os campos que devem ser enviados e que serão retornados
-efipay.defineLinkPayMethod(params, body)
+apiEfi.defineLinkPayMethod(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

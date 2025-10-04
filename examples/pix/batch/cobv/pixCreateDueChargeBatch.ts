@@ -1,5 +1,5 @@
 import EfiPay from 'sdk-typescript-apis-efi';
-import options from '../../credentials';
+import options from '../../../credentials';
 
 let body = {
     descricao: "Cobranças dos alunos do turno vespertino",
@@ -44,10 +44,10 @@ let params = {
     id: 123
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixCreateDueChargeBatch indica os campos que devem ser enviados e que serão retornados
-efipay.pixCreateDueChargeBatch(params, body)
+apiEfi.pixCreateDueChargeBatch(params, body)
     .then((resposta) => {
         console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
     })

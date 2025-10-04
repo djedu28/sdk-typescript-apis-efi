@@ -59,7 +59,7 @@ let body = {
 								align: 'left',
 								color: '#000000',
 								style: 'normal',
-								text: 'Confira na documentação da efipay. todas as configurações possíveis de um boleto balancete.',
+								text: 'Confira na documentação da apiEfi. todas as configurações possíveis de um boleto balancete.',
 								colspan: 4,
 							},
 						],
@@ -70,10 +70,10 @@ let body = {
 	],
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método defineBalanceSheetBillet indica os campos que devem ser enviados e que serão retornados
-efipay.defineBalanceSheetBillet(params, body)
+apiEfi.defineBalanceSheetBillet(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

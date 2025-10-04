@@ -5,10 +5,10 @@ let params = {
     txid: 'dt9BHlyzrb5jrFNAdfEDVpHgiOmDbVqVxd',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixSplitDetailCharge indica os campos que devem ser enviados e que serão retornados
-efipay.pixSplitDetailCharge(params)
+apiEfi.pixSplitDetailCharge(params)
     .then((resposta) => {
         console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
     })

@@ -6,10 +6,10 @@ let params = {
 	fim: '2023-11-30T20:10:00Z',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixSendList indica os campos que devem ser enviados e que serão retornados
-efipay.pixSendList(params)
+apiEfi.pixSendList(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

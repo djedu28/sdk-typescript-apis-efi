@@ -6,10 +6,10 @@ let params = {
 	parcel: 1,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método cancelCarnetParcel indica os campos que devem ser enviados e que serão retornados
-efipay.cancelCarnetParcel(params)
+apiEfi.cancelCarnetParcel(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

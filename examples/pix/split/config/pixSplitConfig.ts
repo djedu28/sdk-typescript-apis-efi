@@ -32,10 +32,10 @@ let body = {
         ]
     }
 };
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixSplitConfig indica os campos que devem ser enviados e que serão retornados
-efipay.pixSplitConfig({}, body)
+apiEfi.pixSplitConfig({}, body)
     .then((resposta) => {
         console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
     })

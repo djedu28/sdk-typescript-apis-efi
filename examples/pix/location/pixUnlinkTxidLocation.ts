@@ -5,10 +5,10 @@ let params = {
 	id: 95,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixUnlinkTxidLocation indica os campos que devem ser enviados e que serão retornados
-efipay.pixUnlinkTxidLocation(params)
+apiEfi.pixUnlinkTxidLocation(params)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

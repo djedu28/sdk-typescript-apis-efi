@@ -11,9 +11,9 @@ let body = {
 }
 
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.pixResendWebhook({}, body)
+apiEfi.pixResendWebhook({}, body)
     .then((resposta) => {
         console.log(resposta)
     })

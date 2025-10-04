@@ -5,9 +5,9 @@ let params = {
 	e2eId: 'E18236120202104191813s0326120V4K',
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.pixDetailReceived(params)
+apiEfi.pixDetailReceived(params)
 	.then((resposta) => {
 		console.log(resposta)
 	})

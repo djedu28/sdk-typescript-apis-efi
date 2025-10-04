@@ -15,10 +15,10 @@ let body = {
 	},
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método pixSend indica os campos que devem ser enviados e que serão retornados
-efipay.pixSend(params, body)
+apiEfi.pixSend(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

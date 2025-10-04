@@ -1,7 +1,7 @@
 import EfiPay from 'sdk-typescript-apis-efi'
 import options from '../../../credentials'
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 let body = {
 	valor: '0.01',
@@ -12,7 +12,7 @@ let params = {
 }
 
 // O método ofDevolutionPix indica os campos que devem ser enviados e que serão retornados
-efipay.ofDevolutionPix(params, body)
+apiEfi.ofDevolutionPix(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})

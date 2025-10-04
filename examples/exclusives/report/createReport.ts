@@ -23,9 +23,9 @@ let body = {
 	},
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
-efipay.createReport({}, body)
+apiEfi.createReport({}, body)
 	.then((resposta) => {
 		console.log(resposta)
 	})

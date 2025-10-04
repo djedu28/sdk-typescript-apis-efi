@@ -9,10 +9,10 @@ let body = {
 	interval: 2,
 }
 
-const efipay = new EfiPay(options)
+const apiEfi = new EfiPay(options)
 
 // O método createPlan indica os campos que devem ser enviados e que serão retornados
-efipay.createPlan(params, body)
+apiEfi.createPlan(params, body)
 	.then((resposta) => {
 		console.log(resposta) // Aqui você tera acesso a resposta da API e os campos retornados de forma intuitiva
 	})
